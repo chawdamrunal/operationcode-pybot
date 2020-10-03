@@ -13,7 +13,7 @@ async def test_team_join_handler_exists(bot):
     endpoints.slack.create_endpoints(bot["plugins"]["slack"])
 
     assert asynctest.asyncio.iscoroutinefunction(
-        bot["plugins"]["slack"].routers["event"]._routes["team_join"]["*"]["*"][0][0]
+        bot["plugins"]["slack"].routers["event"]._routes["team_join"]["*"]["*"][0][0] 
     )
 
 
